@@ -29,7 +29,7 @@ It will be very helpful to define a small function which, given the name of a co
 
 If a string `str` represents a number, like "435", you can get this number as an `int` using:  
 
-```
+```java
 int n = Integer.parseInt(str);  
 ```
 
@@ -37,17 +37,25 @@ For data as above you should get scores [10, 6, 9, 6].
 
 Deadline: May 11 (inclusive)
 
-> Java
+# Solution  
 
 ```java
 public class TournamentScores {
     public static void main(String[] args) {
         // Match results: [team1, score1, team2, score2]
         String[][] arr = {
-            {"Germany", "2", "Scotland", "1"},
-            {"Poland", "2", "Germany", "0"},
-            {"Germany", "1", "Ireland", "1"},
-            // ... (other match results)
+              {"Germany",  "2", "Scotland", "1"},
+              {"Poland",   "2", "Germany",  "0"},
+              {"Germany",  "1", "Ireland",  "1"},
+              {"Poland",   "2", "Scotland", "2"},
+              {"Scotland", "1", "Ireland",  "0"},
+              {"Ireland",  "1", "Poland",   "1"},
+              {"Ireland",  "1", "Scotland", "1"},
+              {"Germany",  "3", "Poland",   "1"},
+              {"Scotland", "2", "Germany",  "3"},
+              {"Ireland",  "1", "Germany",  "0"},
+              {"Scotland", "2", "Poland",   "2"},
+              {"Poland",   "2", "Ireland",  "1"}
         };
 
         // Scores for Germany, Ireland, Poland, and Scotland
@@ -96,6 +104,3 @@ public class TournamentScores {
     }
 }
 ```
-
-
-
