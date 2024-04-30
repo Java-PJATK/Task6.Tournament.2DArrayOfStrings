@@ -88,19 +88,14 @@ public class TournamentScores {
     }
 
     // Helper function to get the index of a team in the scores array
-    private static int getTeamIndex(String team) {
-        switch (team) {
-            case "Germany":
-                return 0;
-            case "Ireland":
-                return 1;
-            case "Poland":
-                return 2;
-            case "Scotland":
-                return 3;
-            default:
-                throw new IllegalArgumentException("Invalid team name: " + team);
+        private static int getTeamIndex(String team) {
+                return switch (team) {
+                        case "Germany" -> 0;
+                        case "Ireland" -> 1;
+                        case "Poland" -> 2;
+                        case "Scotland" -> 3;
+                        default -> throw new IllegalArgumentException("Invalid team name: " + team);
+                        };
         }
-    }
 }
 ```
