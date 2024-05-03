@@ -39,6 +39,8 @@ Deadline: May 11 (inclusive)
 
 # Solution  
 
+[Replit](https://replit.com/@piecucci/Task6Tournament2DArrayOfStrings#src/main/java/TournamentScores.java)
+
 ```java
 public class TournamentScores {
     public static void main(String[] args) {
